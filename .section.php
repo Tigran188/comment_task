@@ -6,4 +6,3 @@ $arDirProperties = array(
 	'keywords' => 'Keywords',
 	'robots' => 'index, follow'
 );
-?>

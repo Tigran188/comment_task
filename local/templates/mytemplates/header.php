@@ -1,9 +1,10 @@
-<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
+<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+global $APPLICATION;
+?>
 
     <html dir="ltr" lang="de-DE"><head>
 
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
     <title><?$APPLICATION->ShowTitle()?></title>
 
     <?$APPLICATION->ShowHead()?>

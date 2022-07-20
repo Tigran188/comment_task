@@ -36,13 +36,13 @@ if ($itemCount > 0)
 	</div>
 	<div class="bx_catalog_compare_form">
 	<table class="compare-items" data-block="item-list">
-	<thead><tr><td align="center" colspan="2"><?=GetMessage("CATALOG_COMPARE_ELEMENTS")?></td></tr></thead>
+	<thead><tr><td colspan="2"><?=GetMessage("CATALOG_COMPARE_ELEMENTS")?></td></tr></thead>
 	<tbody><?
 	foreach($arResult as $arElement)
 	{
 		?><tr data-block="item-row" data-row-id="row<?=$arElement['PARENT_ID']; ?>">
 			<td><a href="<?=$arElement["DETAIL_PAGE_URL"]?>"><?=$arElement["NAME"]?></a></td>
-			<td><noindex><a href="javascript:void(0);" data-id="<?=$arElement['PARENT_ID']; ?>" rel="nofollow"><?=GetMessage("CATALOG_DELETE")?></a></noindex></td>
+			<td><a href="javascript:void(0);" data-id="<?=$arElement['PARENT_ID']; ?>" rel="nofollow"><?=GetMessage("CATALOG_DELETE")?></a></td>
 		</tr><?
 	}
 	?>
